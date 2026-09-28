@@ -1,0 +1,2 @@
+# Preserve archived program and map bytes, including original line endings.
+source/** -text

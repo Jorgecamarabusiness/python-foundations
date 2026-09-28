@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Replay of actual output from two archived Python projects by Jorge Cámara: an autonomous maze solver and an ASCII automaton.">
+  <title>Python foundations · Jorge Cámara</title>
+  <link rel="stylesheet" href="replay.css">
+  <script src="replay-data.js" defer></script>
+  <script src="replay.js" defer></script>
+</head>
+<body>
+  <main>
+    <nav aria-label="Language"><a href="?lang=en" lang="en">English</a> · <a href="?lang=es" lang="es">Español</a></nav>
+    <p class="eyebrow" id="eyebrow">JORGE CÁMARA · LEARNING ARCHIVE · 2023</p>
+    <h1 id="title">From rules to movement.</h1>
+    <p class="intro" id="intro">Two early Python programs. This viewer replays their actual console output; the presentation was added in 2026. The original algorithms are preserved.</p>
+    <section aria-label="Recorded program output">
+      <div class="toolbar"><label for="program" id="programLabel">Program</label><select id="program"><option value="0">Maze · map 1</option><option value="1">Maze · map 2</option><option value="2">ASCII automaton</option></select><button id="play" type="button">Play</button><button id="reset" type="button">Restart</button></div>
+      <p id="details"></p>
+      <div class="screen" tabindex="0" role="region" aria-label="Scrollable console output"><pre id="frame" aria-label="Program state"></pre></div>
+      <div class="progress"><label for="position" id="positionLabel">Recorded frame</label><input type="range" id="position" min="0" value="0"><output id="counter" for="position"></output></div>
+      <p class="note" id="note">Playback is accelerated. Use the slider to inspect any state. No accounts, analytics, network services or private data.</p>
+    </section>
+    <section class="context"><h2 id="contextTitle">What the code demonstrates</h2><p id="explanation"></p><a id="notes" href="../README.md">Read the project notes</a></section>
+  </main>
+</body>
+</html>

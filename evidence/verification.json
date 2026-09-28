@@ -1,0 +1,46 @@
+{
+  "verifiedOn": "2026-09-28",
+  "python": "3.14.2",
+  "programs": [
+    {
+      "id": "laberinto1.txt",
+      "name": "laberinto1.txt",
+      "steps": 712,
+      "rows": 21,
+      "columns": 91,
+      "finalPosition": [
+        20,
+        88
+      ],
+      "label": "712 moves \u00b7 original right-hand wall follower"
+    },
+    {
+      "id": "laberinto2.txt",
+      "name": "laberinto2.txt",
+      "steps": 1015,
+      "rows": 27,
+      "columns": 55,
+      "finalPosition": [
+        26,
+        53
+      ],
+      "label": "1015 moves \u00b7 original right-hand wall follower"
+    },
+    {
+      "id": "automaton",
+      "name": "ASCII automaton",
+      "steps": 28,
+      "rows": 13,
+      "columns": 30,
+      "label": "28 cycles \u00b7 fixed seed 2023 for reproducible playback"
+    }
+  ],
+  "sha256": {
+    "automaton.py": "0210e32d173a8e7e1573104624a701b881818a8a1fb2d624300b561932420fe8",
+    "laberinto1.txt": "dc99cbd720369b97cb0fcbb3466e81087b5ef18988bb331025e683f8149583ef",
+    "laberinto2.txt": "9350bf526ba86bb2e57e29bb21342372a245b8c8e15cd0b9fd37fecebe9ea733",
+    "maze.py": "03470236e564d2c047cdcf4465b8ed07294dba1d69d51bc467a04dc49d3c17d7"
+  },
+  "method": "Execute original programs; capture stdout; replay output. Only the second maze input is substituted in memory. Automaton seed set externally.",
+  "limits": "Only the two supplied mazes are verified. The automaton uses sequential in-place updates, not Conway's Game of Life."
+}
